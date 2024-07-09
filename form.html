@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            background-color:bisque;
+            
+        }
+        .field{
+            justify-content:center ;
+            text-align: center;
+        }
+        .form{
+            justify-content: center;
+            text-align: center;
+            margin: auto;
+            align-items: center;
+        }
+        .btn{
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body >
+
+    <form class="form">
+        
+        <fieldset class="field">
+          <h1>Sign Up Form</h1>  
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br>
+        <label for="email">Email:</label>
+        <input type="text"><br>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username"><br>
+        <label>Favorite Color:</label>
+        <select name="colors" id="4">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+
+            </option>
+        </select><br>
+        <label for="comments">Comments:</label>
+        <textarea rows="4" cols="50"></textarea><br>
+        <label for="browserlist">Choose your browser from the list:</label>
+        <select id="browser" class="broser">
+            <option value="Microsoft"> Microsoft</option>
+            <option value="Amazon">Amazon</option>
+            <option value="Google">Google</option>
+        </select><br>
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range" min="0" max="100" oninput="outputval(value)"><br>
+        <output id="output" name="range">50</output>
+        <label for="car">Choose a car</label>
+        <select name="car" id="5">
+            <option value="mercedes">Mercedes</option>
+            <option value="Benz">Benz</option>
+            <option value="BMW">BMW</option>
+        </select>
+        </fieldset>
+        <button type="submit" class="btn">Submit</button>
+        
+
+    </form>
+        
+
+    <script>
+        function outputval(value){
+            document.getElementById("output").value=value;
+        }
+    </script>
+    
+</body>
+</html>

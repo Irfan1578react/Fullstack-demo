@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h> Hello</h>
+    <script>
+        console.log("Hello");
+    </script>
+    <noscript>
+        js is not working
+    </noscript>
+    <table border=2>
+        <tr>
+            <td colspan="3">There is something called special</td>
+        </tr>
+        
+        <tr>
+            
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>adalya</td>
+            <td></td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>vinusha</td>
+            <td>34</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>vidya</td>
+            <td>45</td>
+            <td>USA</td>
+        </tr>
+    </table>
+    <table border="2">
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Agalya</td>
+            <td>19</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            
+            <td>20</td>
+            <td>USA</td>
+
+        </tr>
+    </table>
+    <form>
+        <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br>
+        <label for="email">Email:</label>
+        <input type="text"><br>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username"><br>
+        <label>Favorite Color:</label>
+        <select name="colors" id="4">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+
+            </option>
+        </select><br>
+        <label for="comments">Comments:</label>
+        <textarea rows="4" cols="50"></textarea><br>
+        <label for="browserlist">Choose your browser from the list:</label>
+        <input type="text" name="browserlist" id="bl"><br>
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range" min="0" max="100" oninput="outputval(value)"><br>
+        <output id="output" name="range">50</output>
+        <label for="car">Choose a car</label>
+        <select name="car" id="5">
+            <option value="mercedes">Mercedes</option>
+            <option value="Benz">Benz</option>
+            <option value="BMW">BMW</option>
+        </select>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <svg>
+            <circle cx="50" cy="50" r="40" fill="red" stroke="green" stroke-width="4"/>
+        </svg>
+        <label for="browser">Datatype</label>
+        <input list="browser" id="browsers">
+        <datalist id="browser">
+            <option value="Chrome">
+            <option value="Microsoft">
+            <option value="Firefox">
+            <option value="Firebase">
+        </datalist>
+        <label for="cars"> Choose a car</label>
+        <select id="cars" name="cars">
+            <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="bmw">BMW</option>
+            </optgroup>
+            <optgroup label="American Cars">
+                <option value="tesla">Tesla</option>
+            </optgroup>
+        </select>
+        <hr>
+        <h1>LIST</h1>
+        <ul type="circle">
+            <h2>Unordered list</h2>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+        </ul>
+        <ol type="A" start="2">
+            <h2>Ordered List</h2>
+            <li>Item 1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            
+        </ol>
+        <ol type="a" reversed>
+            <li>Item 1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+
+        </ol>
+        <dl>
+            <dt>Html</dt>
+            <dd>It is a markup language</dd>
+            <dt>Css</dt>
+            <dd>It is nice functionality to design the webpage</dd>
+        </dl>
+        <h1>Media Tag Example</h1>
+        <h1>Image</h1>
+        <img src="brucelee.jfif" alt="brucelee">
+        <h2>Audio</h2>
+        <audio controls >
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Your audio file is not supported in the browser
+        </audio>
+        <h2>Video</h2>
+        <video  width="300" height="200"  controls>
+            <source  thumbnail src="avl.mp4" type="video/mp4">
+            Your browser doesnt support the format
+        </video>
+        <h2>Video</h2>
+        <h1>embedded resume</h1>
+        <embed src="Resume without photo.pdf" type="application/pdf">
+        <h1>another html file</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SrrL4lPyxDM?si=OMOYx3EG2Uf7G5NJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <svg width="300" height="200">
+            //r rfor radius
+            <circle cx="70" cy="30" r="40"   fill="yellow" stroke="red" stroke-width="4"></circle>
+            <rect x="10" y="10" width="200" height="100" strokes="red" stroke-width="6" fill="blue" /> 
+        </svg>
+
+    </form>
+    <script>
+        function outputval(value){
+            document.getElementById("output").value=value;
+        }
+    </script>
+
+</body>
+</html>
