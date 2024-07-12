@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            line-height: 2;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(87,87,151,1) 59%, rgba(54,144,162,1) 100%);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem;
+        }
+        .navbar h1 {
+            color: white;
+            margin: 0;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin-left: 1rem;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: block;
+        }
+        .navbar ul li a:hover {
+            background-color: #575757;
+        }
+        @media (max-width: 1000px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar ul {
+                flex-direction: column;
+                width: 100%;
+            }
+            .navbar ul li {
+                margin-left: 0;
+                width: 100%;
+            }
+            .navbar ul li a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <h1>Navbar</h1>
+    <ul>
+        <li><a href="Login.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Logout</a></li>
+    </ul>
+</div>
+</body>
+</html>
